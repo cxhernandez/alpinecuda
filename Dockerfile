@@ -6,7 +6,7 @@ RUN apk update && apk add wget && \
     wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run && \
     chmod +x cuda_*_linux.run && \
     ./cuda_*_linux.run --tar mxvf && \
-    RUN rm -rf cuda_*_linux.run \
+    rm -rf cuda_*_linux.run \
            /run_files \
            InstallUtils.pm \
            cuda-installer.pl \
